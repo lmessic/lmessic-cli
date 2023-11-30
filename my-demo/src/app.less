@@ -1,0 +1,22 @@
+@color: red;
+
+.less-box {
+	width: 100%;
+	height: 100%;
+
+	.box {
+		color: @color;
+		background-color: lightblue;
+		transform: translateX(100);
+
+		&::before {
+			@arr: 'hello', 'world';
+		}
+	}
+
+	&_lol {
+		width: 800px;
+		height: 200px;
+		background: url('@/assets/lol.png') no-repeat;
+	}
+}
